@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+
+	<header class="header">
+
+		<div class="header-contacts">
+			<div class="header-contacts-container d-flex justify-content-between">
+				<a href="#" style="background-image: url(../img/logo.png);" alt="logo" class="header-contacts__logo"></a>
+				<ul class="d-none d-md-flex justify-content-between header-address">
+					<li>г. Москва Северянинский проезд, дом 9</li>
+					<li>info@profcoating.ru</li>
+					<li>График работы: Пн-Пт  9:00 - 18:00</li>
+				</ul>
+				<div class="header-contacts__tel">
+					<a href="tel:+7 499 110 74 10">+7 (499) 110-74-10</a>
+					<span data-target="modal-callback" class="header-navigation__call callback-btn modal-btn d-xl-none">Заказать звонок</span>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="header-navigation">
+			<div class="header-navigation-container d-flex justify-content-between">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="d-md-none w-100 mobile-menu">МЕНЮ</div>
+				<div class="nav-container">
+					<nav class="nav d-flex justify-content-between">
+						<ul class="d-flex justify-content-between w-100">
+							<li class="nav-li dropdown">
+								<a href="#" class="nav__item">услуги <svg 
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="10px" height="6px">
+								<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+								d="M5.000,4.748 L0.532,0.280 L0.093,0.720 L5.000,5.627 L9.907,0.720 L9.468,0.280 L5.000,4.748 Z"/>
+								</svg>
+								</a>
+								<ul class="dropdown-content">
+									<li><a href="#">Покраска саморезов</a></li>
+									<li><a href="#">Покраска дисков</a></li>
+									<li><a href="#">Покраска алюминия</a></li>
+									<li><a href="#">Покраска деталей</a></li>
+									<li><a href="#">Покраска профиля</a></li>
+									<li><a href="#">Покраска дверей</a></li>
+									<li><a href="#">Покраска металла</a></li>
+									<li><a href="#">Покраска заборов и ограждений</a></li>
+									<li><a href="#">Покраска мелких изделий</a></li>
+									<li><a href="#">Покраска труб</a></li>
+									<li><a href="#">Покраска сетки</a></li>
+									<li><a href="#">Пескоструйная обработка металла</a></li>
+									<li><a href="#">NCS (Natural Color System)</a></li>
+									<li><a href="#">PMS (Pantone Matching System)</a></li>
+									<li><a href="#">Подбор цвета по образцу</a></li>
+								</ul>
+							</li>
+							<li class="nav-li"><a href="#" class="nav__item">Выполненные работы</a></li>
+							<li class="nav-li"><a href="#" class="nav__item">Палитра</a></li>
+							<li class="nav-li"><a href="#" class="nav__item">прайс-лист</a></li>
+							<li class="nav-li dropdown">
+								<a href="#" class="nav__item ">о компании <svg 
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="10px" height="6px">
+								<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+								d="M5.000,4.748 L0.532,0.280 L0.093,0.720 L5.000,5.627 L9.907,0.720 L9.468,0.280 L5.000,4.748 Z"/>
+								</svg>
+								</a>
+								<ul class="dropdown-content">
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Прайс-лист</a></li>
+									<li><a href="#">Партнеры</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Реквизиты</a></li>
+								</ul>
+							</li>
+							<li class="d-md-none d-xl-block nav-li dropdown" >
+								<a href="#" class="nav__item ">информация <svg 
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="10px" height="6px">
+								<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+								d="M5.000,4.748 L0.532,0.280 L0.093,0.720 L5.000,5.627 L9.907,0.720 L9.468,0.280 L5.000,4.748 Z"/>
+								</svg>
+								</a>
+								<ul class="dropdown-content">
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Статьи</a></li>
+									<li><a href="#">Акции</a></li>
+								</ul>
+							</li>
+							<li class="d-md-none d-xl-block nav-li"><a href="#" class="nav__item">контакты</a></li>
+							<li class="nav__more d-none d-md-block  d-lg-block d-xl-none dropdown"><a href="#">. . .</a>
+								<ul class="dropdown-content">
+									<li class="dropdown">
+								<a href="#">Информация <svg 
+								 xmlns="http://www.w3.org/2000/svg"
+								 xmlns:xlink="http://www.w3.org/1999/xlink"
+								 width="7px" height="11px">
+								<path fill-rule="evenodd"  fill="rgb(88, 87, 87)"
+								 d="M5.414,5.820 L0.946,10.287 L1.386,10.727 L6.293,5.820 L1.386,0.912 L0.946,1.352 L5.414,5.820 Z"/>
+								</svg>
+								</a>
+								<ul class="dropdown-content dropdown-content_second">
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Статьи</a></li>
+									<li><a href="#">Акции</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="">Контакты</a></li>
+								</ul></li>
+						</ul>
+
+					</nav>
+					<ul class="d-flex d-md-none justify-content-between header-address header-address_mobile">
+						<li>г. Москва Северянинский проезд, дом 9</li>
+						<li>info@profcoating.ru</li>
+						<li>График работы: Пн-Пт  9:00 - 18:00</li>
+					</ul>
+				</div>
+				<span data-target="modal-callback" class="header-navigation__call callback-btn modal-btn d-none d-xl-block">Заказать звонок</span>
+
+
+			</div>
+		</div>
+
+	</header>
+
+	<main class="price-list-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<ul class="breadcrumbs">
+			      <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+			      <li class="breadcrumbs__item"><a href="#">прайс-лист</a></li>
+			    </ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 price-list-title">
+					<div class="blot"></div>
+					<h1 class="title-l">прайс-лист</h1>
+				</div>
+			</div>
+			<section class="price-list js-animation">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="title-m-2">виды изделий</h2>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-12 col-md-4 col-lg-5">
+						<h3 class="title-s-2 ">плоские изделия</h3>
+					</div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>от 1000 м2</span>
+						<span>от 500 м2 до 1000 м2</span>
+						<span>от 100 м2 до 500 м2</span>
+						<span>до 100 м2</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column">
+						<span>170 руб/м2</span>
+						<span>175 руб/м2</span>
+						<span>180 руб/м2</span>
+						<span>Минимальня загрузка*</span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-12 col-md-4 col-lg-5">
+						<h3 class="title-s-2">Плоские гофрированные и перфорированные изделия</h3>
+					</div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>от 1000 м2</span>
+						<span>от 500 м2 до 1000 м2</span>
+						<span>от 100 м2 до 500 м2</span>
+						<span>до 100 м2</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column">
+						<span>от 200 руб/м2</span>
+						<span>от 210 руб/м2</span>
+						<span>220 руб/м2</span>
+						<span>Минимальня загрузка*</span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-12 col-md-4 col-lg-5">
+						<h3 class="title-s-2">Объемные изделия</h3>
+					</div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>В зависимости от конфигурации и количества</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column justify-content-center">
+						<span >от 170 руб/м2</span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-12 col-md-4 col-lg-5">
+						<h3 class="title-s-2">Погонажные изделия (периметр сечения до 240 мм)</h3>
+					</div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>от 1000 м.п.</span>
+						<span>от 100 м.п до 1000 м.п.</span>
+						<span>до 100 м.п.</span>
+						<span>Покраска погонажных изделий рекуператом</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column">
+						<span>от 35 руб/м</span>
+						<span>от 40 руб/м</span>
+						<span>Минимальня загрузка*</span>
+						<span>от 8 руб/м.п.</span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-12 col-md-4 col-lg-5">
+						<h3 class="title-s-2">Мелкие изделия</h3>
+					</div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>В зависимости от конфигурации и количества</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column justify-content-center">
+						<span>от 7 руб/шт</span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-12 col-md-4 col-lg-5">
+						<h3 class="title-s-2">Метизы</h3>
+					</div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>Саморез</span>
+						<span>Заклепка вытяжная</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column">
+						<span>от 90 коп./шт</span>
+						<span>от 80 коп./шт</span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-12 col-md-4 col-lg-5">
+						<h3 class="title-s-2">Двери металлические</h3>
+					</div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>Стандартная металлическая дверь с рамой</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column justify-content-center">
+						<span>от 2500 руб/комп.</span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-12 col-md-4 col-lg-5">
+						<h3 class="title-s-2">Кованные изделия</h3>
+					</div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>Кованные решетки</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column">
+						<span>от 200 руб/м2</span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-12 col-md-4 col-lg-5">
+						<h3 class="title-s-2">Автомобильные диски</h3>
+					</div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>Покраска дисков</span>
+						<span>Пескоструйная обработка дисков</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column">
+						<span>от 1300 руб/шт. </span>
+						<span>от 1000 руб/шт. </span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-12 col-md-4 col-lg-5">
+						<h2 class="title-m-2">наши наценки</h2>
+					</div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>Наценка за срочность</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column">
+						<span>100%</span>
+					</div>
+				</div>
+				<div class="row price-list-row justify-content-end">
+					<div class="col-lg-7"><div class="price-list-border"></div></div>
+					<div class="col-lg-12"></div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>Наценка за вес:</span>
+						<ul>
+							<li>- Вес изделия от 100 кг до 150 кг</li>
+							<li>- Вес изделия от 150 кг до 200 кг</li>
+							<li>- Вес изделия от 200 кг до 250 кг</li>
+							<li>- Вес изделия от 250 кг до 300 кг</li>
+						</ul>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column justify-content-end">
+						<span>100%</span>
+						<span>150%</span>
+						<span>200%</span>
+						<span>300%</span>
+					</div>
+				</div>
+				<div class="row justify-content-end price-list-row">
+					<div class="col-lg-7"><div class="price-list-border"></div></div>
+					<div class="col-lg-12"></div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>Наценка за металлики и антики</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column">
+						<span>30%</span>
+					</div>
+				</div>
+				<div class="row justify-content-end price-list-row">
+					<div class="col-lg-7"><div class="price-list-border"></div></div>
+					<div class="col-lg-12"></div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>Покраска в несколько слоев (лак, грунт, два слоя краски) за каждый слой</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column justify-content-center">
+						<span>100%</span>
+					</div>
+				</div>
+				<div class="row justify-content-end price-list-row">
+					<div class="col-lg-7"><div class="price-list-border"></div></div>
+					<div class="col-lg-12"></div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>Изготовление спец. оснастки, сверловка технологических отверстий, устранение поверхностной коррозии и мелких дефектов</span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column justify-content-center">
+						<span>по договору</span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-12 col-md-4 col-lg-5">
+						<h2 class="title-m-2">Пескоструйная обработка</h2>
+					</div>
+					<div class="col-7 col-md-4 d-flex flex-column">
+						<span>В зависимости от конфигурации, объема, веса и сложности покрытия </span>
+					</div>
+					<div class="col-5 col-md-4 col-lg-3 d-flex flex-column justify-content-center">
+						<span>от 230 руб/м2</span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<div class="col-4 col-md-4 col-lg-5">
+						<span class="mobile-font-12">*Минимальная загрузка: при максимальной длине изделий</span>
+					</div>
+					<div class="col-4 col-md-4 d-flex flex-column">
+						<span>до 2,5 м</span>
+						<span>от 2,5 до 3 м </span>
+						<span>от 3 до 6 м</span>
+					</div>
+					<div class="col-4 col-md-4 col-lg-3 d-flex flex-column">
+						<span>3500 руб.</span>
+						<span>4500 руб.</span>
+						<span>13500 руб.</span>
+					</div>
+				</div>
+				<div class="row price-list-row">
+					<div class="col-lg-12"><div class="price-list-border"></div></div>
+					<button class="standart-btn price-list-btn mx-auto">скачать прайс-лист</button>
+				</div>
+
+			</section>
+			<section class="price js-animation">
+			
+				<div class="row">
+					<div class="col-lg-12 price-title">
+						<div class="blot"></div>
+						<h1 class="title-l">рассчет стоимости</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="d-none d-xl-block col-xl-6">
+						<img class="price__img" src="../img/price-img.png" alt="">
+						
+					</div>
+					<div class="col-xl-6">
+						<div class="price-calc">
+							<div class="price-calc-header d-flex align-items-center">
+								<div class="price-calc-header__counter"><i class="js-currentIndex"></i> <span>/ 6</span></div>
+								<div class="price-calc-header__title d-flex align-items-center">
+									<h2 class="js-slide current">вид изделия под покраску </h2>
+									<h2 class="js-slide">Нужна ли пескоструйная обработка?</h2>
+									<h2 class="js-slide">Обьем работы</h2>
+									<h2 class="js-slide">Сроки выполнения</h2>
+									<h2 class="js-slide">дополнительные пожелания</h2>
+									<h2 class="js-slide">контактные данные</h2>
+								</div>
+							</div>
+							<ul class="lines-list">
+								<li class="lines-list__item normal active"></li>
+								<li class="lines-list__item normal"></li>
+								<li class="lines-list__item normal"></li>
+								<li class="lines-list__item normal"></li>
+								<li class="lines-list__item normal"></li>
+								<li class="lines-list__item normal"></li>
+								<li class="current-step"></li>
+							</ul>
+							<div class="price-calc-select">
+								<div class="price-calc-select__item js-slide current">
+									<label><input type="radio" name="product-type" value="3D"><div class="checkmark"></div><span>3D</span></label>
+									<label><input type="radio" name="product-type" value="Квадратный метр"><div class="checkmark"></div><span>Квадратный метр</span></label>
+									<label><input type="radio" name="product-type" value="Погонный метр" checked><div class="checkmark"></div><span>Погонный метр</span></label>
+									<label><input type="radio" name="product-type" value="Не знаю - доверюсь специалистам"><div class="checkmark"></div><span>Не знаю - доверюсь специалистам</span></label>
+								</div>
+								<div class="price-calc-select__item js-slide">
+									<label><input type="radio" name="sandblasting" value="yes"><div class="checkmark"></div><span>Да</span></label>
+									<label><input type="radio" name="sandblasting" value=""><div class="checkmark"></div><span>Не знаю</span></label>
+									<label><input type="radio" name="sandblasting" value="no" checked><div class="checkmark"></div><span>Нет</span></label>
+								</div>
+								<div class="price-calc-select__item js-slide">
+									<span class="price-mobile-text">Укажите количество изделий:</span>
+									<input type="number">
+									<select name="unit" id="unit">
+										<option value="">шт.</option>
+										<option value="">м<sup>2</sup></option>
+										<option value="">п.м.</option>
+									</select>
+								</div>
+								<div class="price-calc-select__item js-slide">
+									<span class="price-mobile-text">Укажите желаемые сроки выполнения :</span>
+									<input type="number">
+									<span>дней</span>
+								</div>
+								<div class="price-calc-select__item js-slide">
+									<span>Опишите дополнительные требования к покраске</span>
+									<textarea name="" id="" cols="50" rows="3"></textarea>
+									<div class="selected-files">
+										<div class="selected-files__item">
+											<span class="selected-files__text"></span>
+											<span class="selected-files__remove icon-uniE10A"></span>
+										</div>
+									</div>
+									<div class="file-btn-container">
+										<input class="input-file d-none" type="file">
+										<button class="price__btn file-btn f">прикрепить файл</button>
+										<span class="file-btn__text">(в формате jpeg, png, pdf, doc, txt)</span>
+									</div>
+								</div>
+								<div class="price-calc-select__item js-slide">
+									<span class="d-block">Укажите свои контактные данные чтобы мы могли вам сообщить конечную стоимость вашего заказа</span>
+									<div class="input-container input-container_name">
+										<input type="text">
+										<span class="placeholder">Имя</span>
+									</div>
+									<div class="input-container input-container_tel">
+										<input type="tel">
+										<span class="placeholder">Телефон</span>
+									</div>
+									<div class="input-container input-container_email">
+										<input type="email">
+										<span class="placeholder">Почта</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="buttons-container d-flex justify-content-between">
+							<button class="price__btn btn-prev disabled" ><svg 
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="15px" height="8px">
+								<text font-family="Segoe MDL2 Assets" fill="rgb(45, 45, 45)" transform="matrix( -0.99999999999999, 0, 0, -1,14.492, -2.9994999999999)" font-size="14px">&#60002;</text>
+								</svg>Назад
+							</button>
+							<button class="price__btn btn-next">Далее <svg 
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="15px" height="9px">
+								<path fill-rule="evenodd"  fill="rgb(45, 45, 45)"
+								d="M0.329,4.308 L12.620,4.308 L9.865,1.553 L10.480,0.937 L14.287,4.745 L10.480,8.553 L9.865,7.937 L12.620,5.183 L0.329,5.183 L0.329,4.308 Z"/>
+								</svg>
+							</button>
+							<button class="standart-btn red-btn">узнать стоимость</button>
+						</div>
+					</div>
+				</div>
+			
+			</section>
+
+		</div>
+		<div data-target="modal-callback" class="callback modal">
+			<div class="callback-container">
+				<span class="modal-close"></span>
+				<h2 class="title-m-2">заказать звонок</h2>
+				<div class="input-container input-container_name">
+					<input type="text">
+					<span class="placeholder">Имя</span>
+				</div>
+				<div class="input-container input-container_tel">
+					<input type="tel">
+					<span class="placeholder">Телефон</span>
+				</div>
+				<label class="contacts-form__consent"><input type="checkbox"><span class="text">Даю согласие на обработку своих персональных данных. <a href="#" class="contacts-form__detail">Подробнее</a></span></label>
+				
+				<button  class="standart-btn red-btn callback__btn mx-auto">отправить</button>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+
+		<div class="container d-flex justify-content-between">
+			<div class="footer-info d-flex justify-content-between">
+				<div class="footer__logo" style="background-image: url(../img/logo.png);"></div>
+				<address class="footer-address d-flex flex-column justify-content-between">
+					<span>Адрес: г. Москва Северянинский проезд, дом 9</span>
+					<span>E-mail: info@profcoating.ru</span>
+					<span>График работы: Пн-Пт  9:00 - 18:00</span>
+					<span class="footer-address__tel">+7 (499) 110-74-10</span>
+				</address>
+			</div>
+			<div class="footer-nav d-flex flex-wrap justify-content-between">
+				<div>
+					<a href="#" class="footer-nav__item">главная</a>
+					<a href="#" class="footer-nav__item">услуги</a>
+				</div>
+				<div>
+					<a href="#" class="footer-nav__item">прайс-лист</a>
+					<a href="#" class="footer-nav__item">о компании</a>
+				</div>
+				<div>
+					<a href="#" class="footer-nav__item">Выполненные работы</a>
+					<a href="#" class="footer-nav__item">палитра</a>
+				</div>
+				<div>
+					<a href="#" class="footer-nav__item">информация</a>
+					<a href="#" class="footer-nav__item">контакты</a>
+				</div>
+				
+			</div>
+
+			
+		</div>
+	</footer>
+
+	<script src="../script/jquery.js"></script>
+	<script src="../script/slick.min.js"></script>
+	<script src="../script/script.js"></script>
+</body>
+</html>

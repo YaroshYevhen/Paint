@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+
+	<header class="header">
+
+		<div class="header-contacts">
+			<div class="header-contacts-container d-flex justify-content-between">
+				<a href="#" style="background-image: url(../img/logo.png);" alt="logo" class="header-contacts__logo"></a>
+				<ul class="d-none d-md-flex justify-content-between header-address">
+					<li>г. Москва Северянинский проезд, дом 9</li>
+					<li>info@profcoating.ru</li>
+					<li>График работы: Пн-Пт  9:00 - 18:00</li>
+				</ul>
+				<div class="header-contacts__tel">
+					<a href="tel:+7 499 110 74 10">+7 (499) 110-74-10</a>
+					<span data-target="modal-callback" class="header-navigation__call callback-btn modal-btn d-xl-none">Заказать звонок</span>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="header-navigation">
+			<div class="header-navigation-container d-flex justify-content-between">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="d-md-none w-100 mobile-menu">МЕНЮ</div>
+				<div class="nav-container">
+					<nav class="nav d-flex justify-content-between">
+						<ul class="d-flex justify-content-between w-100">
+							<li class="nav-li dropdown">
+								<a href="#" class="nav__item">услуги <svg 
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="10px" height="6px">
+								<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+								d="M5.000,4.748 L0.532,0.280 L0.093,0.720 L5.000,5.627 L9.907,0.720 L9.468,0.280 L5.000,4.748 Z"/>
+								</svg>
+								</a>
+								<ul class="dropdown-content">
+									<li><a href="#">Покраска саморезов</a></li>
+									<li><a href="#">Покраска дисков</a></li>
+									<li><a href="#">Покраска алюминия</a></li>
+									<li><a href="#">Покраска деталей</a></li>
+									<li><a href="#">Покраска профиля</a></li>
+									<li><a href="#">Покраска дверей</a></li>
+									<li><a href="#">Покраска металла</a></li>
+									<li><a href="#">Покраска заборов и ограждений</a></li>
+									<li><a href="#">Покраска мелких изделий</a></li>
+									<li><a href="#">Покраска труб</a></li>
+									<li><a href="#">Покраска сетки</a></li>
+									<li><a href="#">Пескоструйная обработка металла</a></li>
+									<li><a href="#">NCS (Natural Color System)</a></li>
+									<li><a href="#">PMS (Pantone Matching System)</a></li>
+									<li><a href="#">Подбор цвета по образцу</a></li>
+								</ul>
+							</li>
+							<li class="nav-li"><a href="#" class="nav__item">Выполненные работы</a></li>
+							<li class="nav-li"><a href="#" class="nav__item">Палитра</a></li>
+							<li class="nav-li"><a href="#" class="nav__item">прайс-лист</a></li>
+							<li class="nav-li dropdown">
+								<a href="#" class="nav__item ">о компании <svg 
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="10px" height="6px">
+								<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+								d="M5.000,4.748 L0.532,0.280 L0.093,0.720 L5.000,5.627 L9.907,0.720 L9.468,0.280 L5.000,4.748 Z"/>
+								</svg>
+								</a>
+								<ul class="dropdown-content">
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Прайс-лист</a></li>
+									<li><a href="#">Партнеры</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Реквизиты</a></li>
+								</ul>
+							</li>
+							<li class="d-md-none d-xl-block nav-li dropdown" >
+								<a href="#" class="nav__item ">информация <svg 
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="10px" height="6px">
+								<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+								d="M5.000,4.748 L0.532,0.280 L0.093,0.720 L5.000,5.627 L9.907,0.720 L9.468,0.280 L5.000,4.748 Z"/>
+								</svg>
+								</a>
+								<ul class="dropdown-content">
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Статьи</a></li>
+									<li><a href="#">Акции</a></li>
+								</ul>
+							</li>
+							<li class="d-md-none d-xl-block nav-li"><a href="#" class="nav__item">контакты</a></li>
+							<li class="nav__more d-none d-md-block  d-lg-block d-xl-none dropdown"><a href="#">. . .</a>
+								<ul class="dropdown-content">
+									<li class="dropdown">
+								<a href="#">Информация <svg 
+								 xmlns="http://www.w3.org/2000/svg"
+								 xmlns:xlink="http://www.w3.org/1999/xlink"
+								 width="7px" height="11px">
+								<path fill-rule="evenodd"  fill="rgb(88, 87, 87)"
+								 d="M5.414,5.820 L0.946,10.287 L1.386,10.727 L6.293,5.820 L1.386,0.912 L0.946,1.352 L5.414,5.820 Z"/>
+								</svg>
+								</a>
+								<ul class="dropdown-content dropdown-content_second">
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Статьи</a></li>
+									<li><a href="#">Акции</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="">Контакты</a></li>
+								</ul></li>
+						</ul>
+
+					</nav>
+					<ul class="d-flex d-md-none justify-content-between header-address header-address_mobile">
+						<li>г. Москва Северянинский проезд, дом 9</li>
+						<li>info@profcoating.ru</li>
+						<li>График работы: Пн-Пт  9:00 - 18:00</li>
+					</ul>
+				</div>
+				<span data-target="modal-callback" class="header-navigation__call callback-btn modal-btn d-none d-xl-block">Заказать звонок</span>
+
+
+			</div>
+		</div>
+
+	</header>
+
+	<main class="gallery-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<ul class="breadcrumbs">
+			      <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+			      <li class="breadcrumbs__item"><a href="#">Выполненные работы</a></li>
+			    </ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 gallery-title">
+					<div class="blot"></div>
+					<h1 class="title-l">выполненные работы</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="title-m-2">обработка изделий</h2>
+				</div>
+			</div>
+			<div class="row services-content js-animation">
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-1.jpg);"></div>
+							</div>
+							<h3 class="title-s">механическая обработка</h3>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-2.jpg);"></div>
+							</div>
+							<h3 class="title-s">пескоструйная обработка</h3>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-3.jpg);"></div>
+							</div>
+							<h3 class="title-s">химическое снятие порошкового покрытия</h3>
+						</a>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="title-m-2">порошковая покраска</h2>
+				</div>
+			</div>
+			<div class="row services-content js-animation">
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-4.jpg);"></div>
+							</div>
+							<h3 class="title-s">авто и мото диски</h3>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-5.jpg);"></div>
+							</div>
+							<h3 class="title-s">вело и мото рамы</h3>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-6.jpg);"></div>
+							</div>
+							<h3 class="title-s">ворота и двери</h3>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-7.jpg);"></div>
+							</div>
+							<h3 class="title-s">интерьер</h3>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-8.jpg);"></div>
+							</div>
+							<h3 class="title-s">керамика и фаянс</h3>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-9.jpg);"></div>
+							</div>
+							<h3 class="title-s">мелкие детали и изделия</h3>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-10.jpg);"></div>
+							</div>
+							<h3 class="title-s">металические каркасы и изделия</h3>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-11.jpg);"></div>
+							</div>
+							<h3 class="title-s">метизы</h3>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<a href="#" class="services-content__item">
+							<div class="img-container">
+								<div class="img" style="background-image: url(../img/gallery-12.jpg);"></div>
+							</div>
+							<h3 class="title-s">скульптура</h3>
+						</a>
+					</div>
+			</div>
+		</div>
+		<div data-target="modal-callback" class="callback modal">
+			<div class="callback-container">
+				<span class="modal-close"></span>
+				<h2 class="title-m-2">заказать звонок</h2>
+				<div class="input-container input-container_name">
+					<input type="text">
+					<span class="placeholder">Имя</span>
+				</div>
+				<div class="input-container input-container_tel">
+					<input type="tel">
+					<span class="placeholder">Телефон</span>
+				</div>
+				<label class="contacts-form__consent"><input type="checkbox"><span class="text">Даю согласие на обработку своих персональных данных. <a href="#" class="contacts-form__detail">Подробнее</a></span></label>
+				
+				<button  class="standart-btn red-btn callback__btn mx-auto">отправить</button>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+
+		<div class="container d-flex justify-content-between">
+			<div class="footer-info d-flex justify-content-between">
+				<div class="footer__logo" style="background-image: url(../img/logo.png);"></div>
+				<address class="footer-address d-flex flex-column justify-content-between">
+					<span>Адрес: г. Москва Северянинский проезд, дом 9</span>
+					<span>E-mail: info@profcoating.ru</span>
+					<span>График работы: Пн-Пт  9:00 - 18:00</span>
+					<span class="footer-address__tel">+7 (499) 110-74-10</span>
+				</address>
+			</div>
+			<div class="footer-nav d-flex flex-wrap justify-content-between">
+				<div>
+					<a href="#" class="footer-nav__item">главная</a>
+					<a href="#" class="footer-nav__item">услуги</a>
+				</div>
+				<div>
+					<a href="#" class="footer-nav__item">прайс-лист</a>
+					<a href="#" class="footer-nav__item">о компании</a>
+				</div>
+				<div>
+					<a href="#" class="footer-nav__item">Выполненные работы</a>
+					<a href="#" class="footer-nav__item">палитра</a>
+				</div>
+				<div>
+					<a href="#" class="footer-nav__item">информация</a>
+					<a href="#" class="footer-nav__item">контакты</a>
+				</div>
+				
+			</div>
+
+			
+		</div>
+	</footer>
+
+	<script src="../script/jquery.js"></script>
+	<script src="../script/slick.min.js"></script>
+	<script src="../script/script.js"></script>
+</body>
+</html>
