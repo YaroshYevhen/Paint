@@ -444,6 +444,9 @@
   .advantages {
     margin-bottom: 90px;
   }
+  .advantages-content {
+    margin: 0;
+  }
   .advantages-content__item {
     width: 330px;
     margin-left: auto;
