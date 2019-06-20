@@ -1047,6 +1047,7 @@ a:hover {
   content: "";
   height: 50px;
   width: 1px;
+  bottom: 0;
   background-color: #393939;
   position: absolute;
   right: 0;
