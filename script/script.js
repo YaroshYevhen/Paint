@@ -145,8 +145,7 @@ function closeModal(){
     {
       breakpoint: 991.98,
       settings: {
-        vertical: true,
-        verticalSwiping: true
+        vertical: true
       }
     }
   ]
