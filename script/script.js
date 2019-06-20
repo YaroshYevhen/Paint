@@ -145,7 +145,8 @@ function closeModal(){
     {
       breakpoint: 991.98,
       settings: {
-        vertical: true
+	slidesToShow: 1,
+	slidesToScroll: 1
       }
     }
   ]
