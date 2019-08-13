@@ -305,9 +305,10 @@ input[value] + .placeholder {
 .placeholder {
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
   color: #b7b7b7;
   pointer-events: none;
+  transition: top .3s, font-size .3s;
 }
 
 a:hover {
@@ -326,6 +327,8 @@ a:hover {
   border-radius: 25px;
   transition: background-color .3s, border .3s, color .3s;
   display: block;
+  text-align: center;
+  line-height: 50px;
 }
 
 .red-btn {
@@ -2109,32 +2112,57 @@ a:hover {
   font-weight: 600;
 }
 
-.contacts-form__name {
+.contacts-form .input-container_name {
   width: calc(50% - 17.5px);
 }
 
-.contacts-form__tel {
+.contacts-form .input-container_tel {
   width: calc(50% - 17.5px);
 }
 
-.contacts-form__email {
+.contacts-form .input-container_email {
   margin-top: 35px;
 }
 
-.contacts-form__text {
+.contacts-form .input-container_question {
   width: 100%;
   margin: 30px 0;
 }
 
 .contacts-form__consent {
   font-size: 14px;
-  display: inline;
+  display: inline-block;
+  position: relative;
+}
+.contacts-form__consent input{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+}
+.contacts-form__consent.error span:before{
+  border-color:#f00;
 }
 
 .contacts-form__consent input:checked + span:before {
-  content: "✓";
   background-color: #006cff;
   border-color: #006cff;
+}
+.contacts-form__consent input:checked + span:after {
+  content: '';
+  position: absolute;
+  color: #fff;
+  top: 4px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
 }
 
 .contacts-form__consent span {
@@ -2148,13 +2176,13 @@ a:hover {
   content: '';
   position: absolute;
   text-align: center;
-  line-height: 16px;
+  line-height: 18px;
   font-size: 16px;
   color: #fff;
-  top: 0;
+  top: 2px;
   left: 0;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border: 1px solid #b7b7b7;
   transition: border-color .3s, background-color .3s;
 }

@@ -179,14 +179,26 @@
 					<div class="col-12 col-lg-6">
 						<h2 class="title-m-2">Задать вопрос</h2>
 						<div class="contacts-form">
-							<input type="text" class="contacts-form__name" placeholder="Имя">
-							<input type="tel" class="contacts-form__tel" placeholder="Телефон">
-							<input type="email" class="contacts-form__email" placeholder="Почта">
-							<input type="text" class="contacts-form__text" placeholder="Ваш вопрос">
-							<label class="contacts-form__consent"><input type="checkbox"><span>Даю согласие на обработку своих персональных данных. <a href="#" class="contacts-form__detail">Подробнее</a></span></label>
-							
-							<button class="standart-btn red-btn contacts-form__btn">отправить</button>
+						<div class="input-container input-container_name">
+						  <input type="text">
+						  <span class="placeholder">Имя</span>
 						</div>
+						<div class="input-container input-container_tel">
+						  <input type="tel" required="">
+						  <span class="placeholder">Телефон*</span>
+						</div>
+						<div class="input-container input-container_email">
+						  <input type="email">
+						  <span class="placeholder">Почта</span>
+						</div>
+						<div class="input-container input-container_question">
+						  <input type="text">
+						  <span class="placeholder">Ваш вопрос</span>
+						</div>
+						<label class="contacts-form__consent"><input type="checkbox" required=""><span>Даю согласие на обработку своих персональных данных. <a href="/politika" class="contacts-form__detail">Подробнее</a></span></label>
+						
+						<span class="standart-btn red-btn contacts-form__btn">отправить</span>
+					</div>
 						<div class="contacts-sended">
 							<p>Спасибо за Ваше обращение! Наш менеджер свяжеться с Вами в ближайшее время</p>
 							<a href="/contacts" class="contacts-sended__another">Оставить ещё одну заявку</a>
